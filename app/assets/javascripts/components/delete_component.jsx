@@ -11,8 +11,8 @@ const handleDeleteCourse = ( course ) => {
   });
 }
 
-const handleDeleteEnrollment = ( course, enrollment ) => {
-  fetch(`/courses/${course.id}/enrollments/${enrollment.id}`, {
+const handleDeleteEnrollment = ( course, id ) => {
+  fetch(`/courses/${course.id}/enrollments/${id}`, {
     method: 'DELETE',
   });
 }
